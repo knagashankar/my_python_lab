@@ -1,0 +1,19 @@
+'''
+This Program is written to test and understand how arguments passed
+from terminal are enumerated and in what type the variables are read
+'''
+
+# importing the sys module
+import sys
+
+# printing all passed argument variables
+print(sys.argv)
+
+# printing type of argument variables
+print(type(sys.argv))
+# it will be a list
+
+# printing the type of each argument
+for i in range(len(sys.argv)):
+    print(i, sys.argv[i], type(sys.argv[i]))
+# all arguments will be read as strings
